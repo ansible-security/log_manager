@@ -1,0 +1,4 @@
+- name:  Disable sending TrendMicro DeepSecurity logs to syslog
+  trendmicro.deepsec.syslog_config:
+    state: absent
+    name: "{{ trendmicro_syslog_config_name }}"
