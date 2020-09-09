@@ -14,6 +14,9 @@ Requirements
 Red Hat Enterprise Linux 7.x, or derived Linux distribution such as CentOS 7,
 Scientific Linux 7, etc
 
+For TrendMicro provider to work with log_manager as expected
+user should have [TrendMicro DeepSecurity collection](https://galaxy.ansible.com/trendmicro/deepsec) installed
+
 Functions
 ---------
 
