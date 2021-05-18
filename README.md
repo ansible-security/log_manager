@@ -1,8 +1,6 @@
 log_manager
 ===========
 
-# This content is currently under development and should not be considered production ready
-
 An [Ansible](https://ansible.com) role to manage logs in many firewall devices.
 
 Current supported list of providers:
