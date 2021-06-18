@@ -43,8 +43,7 @@ Example Playbook
 
 * TrendMicro Deepsecurity
 
-1. Create a Syslog config and as mentioned in TM Deepsec collection [Readme]
-   (https://github.com/ansible-collections/trendmicro.deepsec#using-trendmicro-deepsecurity-ansible-collection)
+1. Create a Syslog config and as mentioned in TM Deepsec collection [Readme](https://github.com/ansible-collections/trendmicro.deepsec#using-trendmicro-deepsecurity-ansible-collection)
    As Syslog has legacy TM REST API implementation it uses inventory which
    requires `ansible_user` and `ansible_httpapi_pass` in inventory file.
 
