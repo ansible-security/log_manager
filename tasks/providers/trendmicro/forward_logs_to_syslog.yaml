@@ -1,11 +1,6 @@
-- name: Enable sending TrendMicro DeepSecurity logs to syslog
-  trendmicro.deepsec.syslog_config:
-    state: present
-    name: "{{ trendmicro_syslog_config_name }}"
-    facility: local0
-    event_format: leef
-    direct: false
-    server: "{{ syslog_server }}"
-    port: 514
-    transport: udp
-    description: Syslog API request from Ansible
+- name: Enable sending TrendMicro DeepSecurity logs to configured syslog
+  trendmicro.deepsec.deepsec_system_settings:
+    state: "{{ state }}"
+    config:
+      platform_setting_syslog_config_id:
+        value: "{{ lookup('file', '/tmp/syslog_config_id.conf') }}"
